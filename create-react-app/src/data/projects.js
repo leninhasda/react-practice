@@ -1,6 +1,6 @@
-const project1 = 'https://picsum.photos/200/200';
-const project2 = 'https://picsum.photos/200/200';
-const project3 = 'https://picsum.photos/200/200';
+const project1 = 'https://picsum.photos/500';
+const project2 = 'https://picsum.photos/500';
+const project3 = 'https://picsum.photos/500';
 
 
 const PROJECTS = [

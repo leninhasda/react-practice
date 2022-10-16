@@ -38,24 +38,24 @@ class App extends Component {
     render() {
         let bio = this.state.displayBio ? (
             <div>
-                <p>hello again</p>
-                <p>hello again</p>
-                <p>hello again</p>
-                <button onClick={this.toggleDisplay}>Show less</button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button onClick={this.toggleDisplay} className="btn btn-warning">Show less</button>
             </div>
         ) :(
             <div>
-                <button onClick={this.toggleDisplay}>More</button>
+                <button onClick={this.toggleDisplay} className="btn btn-info">More</button>
             </div>
         );
 
         return (
-            <div>
-                <h1>Hello!</h1>
-                <p>My name is Lenin, I'm a software engineer.</p>
-                <p>I'm always looking forward to working on meaningful project</p>
-                {bio}
-                <hr/>
+            <div className="container">
+                <div className="jumbotron">
+                    <h1>Hello!</h1>
+                    <p>My name is Lenin, I'm a software engineer.</p>
+                    <p>I'm always looking forward to working on meaningful project</p>
+                    {bio}
+                    <hr/>
+                </div>
 
                 <Projects/>
             </div>
